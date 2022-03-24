@@ -8,7 +8,7 @@
   </div>
 
   <div class="row">
-    <ul class="nav nav-tabs col-md-6">
+    <ul class="nav nav-tabs col-md-12">
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['mapa']" routerLinkActive="active">Mapa</a>
       </li>
@@ -35,6 +35,10 @@
         </div>
       </li>
     </ul>
-    <router-outlet></router-outlet>
+  </div>
+  <div class="row">
+    <div class="tab-content" id="pills-tabContent">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
