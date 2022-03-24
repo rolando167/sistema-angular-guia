@@ -1,5 +1,5 @@
 # SistemaTurismoAngular
- Guia Rapida Nivel 1 🚩 2022
+ Guia Rapida Nivel 1 🚩 2022 - Rutas Home children LazyLoad y auth a un solo component - 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
 <img src="main.jpg " />
