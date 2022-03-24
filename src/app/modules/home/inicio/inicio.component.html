@@ -1,22 +1,30 @@
 <div class="container my-1">
   <div class="row">
+    <div class="col-md-12">
+      <div class="alert alert-primary" role="alert">
+      Bienvenido al Inicio - Landing Page
+      </div>
+    </div>
+  </div>
 
-  <div class="col-md-6">
-    <div class="list-group" id="myList" role="tablist">
-      <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Noticias</a>
-      <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Equipo</a>
-      <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Eventos</a>
-      <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Alertas</a>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="list-group" id="myList" role="tablist">
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#home" role="tab">Noticias</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Equipo</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Eventos</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Alertas</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="tab-content">
+        <router-outlet></router-outlet>
+        <div class="tab-pane" id="home" role="tabpanel">...1</div>
+        <div class="tab-pane" id="profile" role="tabpanel">...2</div>
+        <div class="tab-pane" id="messages" role="tabpanel">...3</div>
+        <div class="tab-pane" id="settings" role="tabpanel">...4</div>
+      </div>
     </div>
   </div>
-  <div class="col-md-6">
-    <div class="tab-content">
-      <div class="tab-pane active" id="home" role="tabpanel">...1</div>
-      <div class="tab-pane" id="profile" role="tabpanel">...2</div>
-      <div class="tab-pane" id="messages" role="tabpanel">...3</div>
-      <div class="tab-pane" id="settings" role="tabpanel">...4</div>
-    </div>
-  </div>
-</div>
 </div>
 
