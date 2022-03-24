@@ -1,20 +1,40 @@
-<div class="content col-md-6">
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Mapa</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Datos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Avance</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Reporte</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled">Liberar</a>
-    </li>
-  </ul>
-  <router-outlet></router-outlet>
+<div class="container  my-1">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="alert alert-success" role="alert">
+        A simple success alert—check it out! 2022 😄
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <ul class="nav nav-tabs col-md-6">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Mapa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Datos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Avance</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reporte</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Liberar</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
+  </div>
 </div>
