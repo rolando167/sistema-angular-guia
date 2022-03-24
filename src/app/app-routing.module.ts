@@ -4,7 +4,7 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
 
 const routes: Routes = [
   {
-    // INDEPENDIENTE - OPTIMIZADO
+    // INDEPENDIENTE - OPTIMIZADO - trae solo si se llama uno por uno
     path: 'home',
     children: [
       { path: '', loadChildren: () => import('../app/modules/home/inicio/inicio.module').then(m => m.InicioModule) },
