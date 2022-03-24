@@ -10,7 +10,9 @@ const routes: Routes = [
       { path: 'about', loadChildren: () => import('../app/modules/home/about/about.module').then(m => m.AboutModule) }
     ]
   },
-  { path: 'auth', children: [
+  {
+    // Trae Mas componentes segun si estan agregados en el grupo module y su ruta
+    path: 'auth', children: [
       { path: '', loadChildren: () => import('../app/modules/auth/auth.module').then(m => m.AuthModule) },
     ]
   },
