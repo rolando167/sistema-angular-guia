@@ -3,11 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    // INDEPENDIENTE - OPTMIZADO
+    // INDEPENDIENTE - OPTIMIZADO
     path: 'home',
     children: [
       { path: '', loadChildren: () => import('../app/modules/home/inicio/inicio.module').then(m => m.InicioModule) },
       { path: 'about', loadChildren: () => import('../app/modules/home/about/about.module').then(m => m.AboutModule) }
+    ]
+  },
+  { path: 'auth', children: [
+      { path: '', loadChildren: () => import('../app/modules/auth/auth.module').then(m => m.AuthModule) },
     ]
   },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
